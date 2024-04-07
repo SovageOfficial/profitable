@@ -42,7 +42,7 @@
         </div>
         <picture>
             <source media="(max-width: 600px)" srcset="./dist/img/mainPhoto680.jpg" type="image/jpeg">
-            <img class="header__img" src="./dist/img/mainPhotoBig680.jpg"
+            <img class="header__img" id="shoppingCart" src="./dist/img/mainPhotoBig680.jpg"
                 alt="Wózek na zakupy przepełniony elektroniką i gadżetami w odcieniach błękitu">
         </picture>
         <div class="ring header__firstRing"></div>
@@ -104,7 +104,7 @@
                 <h2>Dlaczego my?</h2>
             </div>
             <div class="about__contents">
-                <div class="about__examples">
+                <div class="about__examples animation anLeft">
                     <div class="example">
                         <div class="example__first">
                             <img class="example__first-img" src="./dist/img/SHAKE HANDS.svg" alt="Ikona uścisk dłoni">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="about__contents-box">
                     <picture>
-                        <img class="about__contents-box-img" src="./dist/img/whyUs700.jpg"
+                        <img class="about__contents-box-img animation anRight" src="./dist/img/whyUs700.jpg"
                             alt="4 obrazki z turkusowymi obrazkami">
                     </picture>
                 </div>
@@ -201,11 +201,11 @@
             <div class="faq__middle wrapper">
                 <picture>
                     <source media="(max-width: 600px)" srcset="./dist/img/question400.jpg" type="image/jpeg">
-                    <img class="faq__img" src="./dist/img/question600.jpg"
+                    <img class="faq__img animation anLeft" src="./dist/img/question600.jpg"
                         alt="Znaki zapytania w kolorze turkusowym wypełnione ikonami związanymi z zakupami i technologią.">
                 </picture>
                 <div class="wrapper">
-                    <div class="accordion">
+                    <div class="accordion animation anRight">
                         <div class="accordion__box">
                             <button class="accordion__box-btn">
                                 <img class="accordion__box-btn-img" src="./dist/img/UP.svg" alt="Ikona strzałki w górę">
@@ -347,6 +347,7 @@
 
 
 </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
 </body>
 
