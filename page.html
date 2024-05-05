@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +10,24 @@
 <body>
     <nav class="nav">
     <a class="nav__logo" href="./index.html">
-        <img class="nav__logo-img"  src="./dist/img/PROFITABLE_LOGO_NAV.svg" alt="logo profitable">
+        <img class="nav__logo-img" src="./dist/img/PROFITABLE_LOGO_NAV.svg" alt="logo profitable">
         <p class="nav__logo-text">profitable</p>
     </a>
     <div class="nav__content">
         <ul class="nav__list">
-            <li><a class="nav__list-item" href="./index.html">główna</a></li>
-            <li><a class="nav__list-item" href="./page.html">usługi</a></li>
-            <li><a class="nav__list-item" href="./page2.html">o nas</a></li>
-            <li><a class="nav__list-item" href="./index.html#contact">kontakt</a></li>
+            <li><a id="nav_main" class="nav__list-item" href="./index.html"></a></li>
+            <li><a id="nav_services" class="nav__list-item" href="./page.html"></a></li>
+            <li><a id="nav_aboutUs" class="nav__list-item" href="./page2.html"></a></li>
+            <li><a id="nav_contact" class="nav__list-item" href="./index.html#contact"></a></li>
+            <li class="dropdown">
+                <button id="btnPL" data-lang="pl"><img id="PL" class="flag" src="./dist/img/PL.svg" alt="flaga Polski"></button>
+                <ul>
+                    <li><button id="btnENG" data-lang="pl"><img id="ENG" class="flag" src="./dist/img/ENG.svg" alt="flaga Wielkiej Brytani"></button></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav__btn glass">
-            <a class="nav__btn-link" href="./index.html#contact">Skontaktuj się</a>
+            <a id="nav_btn" class="nav__btn-link" href="./index.html#contact"></a>
         </div>
     </div>
     <button class="hamburger hamburger--emphatic" type="button">
@@ -73,7 +78,7 @@
                         <h3 class="introduce__content-title">Czym jest audyt?</h3>
                         <p class="introduce__content-desc desc">W audycie przeanalizujemy Twoje konto przyglądając się
                             wszelkim jego szczegółom. Korzystając z naszego doświadczenia i wiedzy <b>podpowiemy Ci co
-                            możesz poprawić</b> oraz jakie działania najlepiej podjąć.
+                                możesz poprawić</b> oraz jakie działania najlepiej podjąć.
                         </p>
                         <div class="wrapper">
     <h3 class="introduce__content-title accTitle">
@@ -173,7 +178,8 @@
                 <div class="feature">
                     <h3 class="feature__title">Masz sklep lub nietypowe zlecenie?
                     </h3>
-                    <p class="feature__desc desc" id="create"><a class="underlineLink" href="./index.html#contact">Napisz do nas</a>, a
+                    <p class="feature__desc desc" id="create"><a class="underlineLink"
+                            href="./index.html#contact">Napisz do nas</a>, a
                         zobaczymy co da się zrobić!</p>
                 </div>
             </div>
@@ -194,7 +200,8 @@
                             <b>NIE MASZ UMIEJĘTNOŚCI </b> lub <b>NIE MASZ CZASU</b>, aby to zrobić?
                             <br><br>
                             My w tym pomożemy! Wystawimy i zoptymalizujemy Twoje <b>oferty na Allegro według Twoich
-                            oczekiwań </b>i naszych podpowiedzi. Decyzja o tym, jak bardzo rozbudowanych opisów potrzebujesz
+                                oczekiwań </b>i naszych podpowiedzi. Decyzja o tym, jak bardzo rozbudowanych opisów
+                            potrzebujesz
                             należy do Ciebie.
                         </p>
                     </div>
@@ -244,13 +251,17 @@
                     </picture>
                     <div class="introduce__content">
                         <h3 class="introduce__content-title">Potrzebujesz pomocy przy Allegro? </h3>
-                        <p class="introduce__content-desc desc">Wyręczymy Cię w wielu czynnościach dbając o Twoje konto, jak o nasze własne. Do korzyści z naszej pomocy należą:
+                        <p class="introduce__content-desc desc">Wyręczymy Cię w wielu czynnościach dbając o Twoje konto,
+                            jak o nasze własne. Do korzyści z naszej pomocy należą:
                             <br><br>
-                            <b>Oszczędność czasu:</b> Zajmiemy się wszystkim od optymalizacji ofert po analizę wyników, byś zyskał możliwie najwięcej cennego czasu.
+                            <b>Oszczędność czasu:</b> Zajmiemy się wszystkim od optymalizacji ofert po analizę wyników,
+                            byś zyskał możliwie najwięcej cennego czasu.
                             <br><br>
-                            <b>Zwiększenie sprzedaży:</b> Dzięki sprawdzonym i skutecznym strategiom pomożemy Ci wypracować konkurencyjną przewagę na rynku.
+                            <b>Zwiększenie sprzedaży:</b> Dzięki sprawdzonym i skutecznym strategiom pomożemy Ci
+                            wypracować konkurencyjną przewagę na rynku.
                             <br><br>
-                            <b>Wzrost zaufania marki:</b> Pomożemy Ci zdobyć zaufanie i lojalność klientów, budując kluczowy w biznesie wizerunek marki.
+                            <b>Wzrost zaufania marki:</b> Pomożemy Ci zdobyć zaufanie i lojalność klientów, budując
+                            kluczowy w biznesie wizerunek marki.
                         </p>
                     </div>
                 </div>
@@ -287,7 +298,8 @@
                 <div class="feature">
                     <h3 class="feature__title">Masz więcej pytań?
                     </h3>
-                    <p class="feature__desc desc" id="ads"><a class="underlineLink" href="./index.html#contact">Napisz do nas</a>! Z chęcią na wszystkie odpowiemy!</p>
+                    <p class="feature__desc desc" id="ads"><a class="underlineLink" href="./index.html#contact">Napisz
+                            do nas</a>! Z chęcią na wszystkie odpowiemy!</p>
                 </div>
             </div>
             <div class="introduce wrapper">
@@ -303,13 +315,18 @@
                     </picture>
                     <div class="introduce__content">
                         <h3 class="introduce__content-title">Dlaczego reklama jest kluczowa?</h3>
-                        <p class="introduce__content-desc desc">Przy stale rozrastającym się rynku reklamowanie swoich przedmiotów, stało się jednym z kluczowych działań by na nim istnieć. 
+                        <p class="introduce__content-desc desc">Przy stale rozrastającym się rynku reklamowanie swoich
+                            przedmiotów, stało się jednym z kluczowych działań by na nim istnieć.
                             <br><br>
-                            Niestety do umiejętnego korzystania z reklam <b>konieczna jest wiedza i godziny poświęcane na analizę</b>. To tu wkraczamy my, oszczędzając Twój budżet i czas, jednocześnie budując pozycje na rynku.
+                            Niestety do umiejętnego korzystania z reklam <b>konieczna jest wiedza i godziny poświęcane
+                                na analizę</b>. To tu wkraczamy my, oszczędzając Twój budżet i czas, jednocześnie
+                            budując pozycje na rynku.
                         </p>
                         <h3 class="introduce__content-title"><br>Co na początku?</h3>
                         <p class="introduce__content-desc desc">
-                            Przed rozpoczęciem <b>przeprowadzamy audyt Twojego konta</b> oraz <b>podeślemy Ci ankietę</b> dotyczącą Twojej sprzedaży i asortymentu. Dzięki temu lepiej zrozumiemy Twoją sytuację i będziemy w stanie efektywniej wykorzystać naszą wiedzę i umiejętności.
+                            Przed rozpoczęciem <b>przeprowadzamy audyt Twojego konta</b> oraz <b>podeślemy Ci
+                                ankietę</b> dotyczącą Twojej sprzedaży i asortymentu. Dzięki temu lepiej zrozumiemy
+                            Twoją sytuację i będziemy w stanie efektywniej wykorzystać naszą wiedzę i umiejętności.
                         </p>
                     </div>
                 </div>
@@ -409,7 +426,9 @@
 
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/translation.min.js"></script>
 </body>
 
 </html>

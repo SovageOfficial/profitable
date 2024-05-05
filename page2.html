@@ -11,18 +11,24 @@
 <body>
     <nav class="nav">
     <a class="nav__logo" href="./index.html">
-        <img class="nav__logo-img"  src="./dist/img/PROFITABLE_LOGO_NAV.svg" alt="logo profitable">
+        <img class="nav__logo-img" src="./dist/img/PROFITABLE_LOGO_NAV.svg" alt="logo profitable">
         <p class="nav__logo-text">profitable</p>
     </a>
     <div class="nav__content">
         <ul class="nav__list">
-            <li><a class="nav__list-item" href="./index.html">główna</a></li>
-            <li><a class="nav__list-item" href="./page.html">usługi</a></li>
-            <li><a class="nav__list-item" href="./page2.html">o nas</a></li>
-            <li><a class="nav__list-item" href="./index.html#contact">kontakt</a></li>
+            <li><a id="nav_main" class="nav__list-item" href="./index.html"></a></li>
+            <li><a id="nav_services" class="nav__list-item" href="./page.html"></a></li>
+            <li><a id="nav_aboutUs" class="nav__list-item" href="./page2.html"></a></li>
+            <li><a id="nav_contact" class="nav__list-item" href="./index.html#contact"></a></li>
+            <li class="dropdown">
+                <button id="btnPL" data-lang="pl"><img id="PL" class="flag" src="./dist/img/PL.svg" alt="flaga Polski"></button>
+                <ul>
+                    <li><button id="btnENG" data-lang="pl"><img id="ENG" class="flag" src="./dist/img/ENG.svg" alt="flaga Wielkiej Brytani"></button></li>
+                </ul>
+            </li>
         </ul>
         <div class="nav__btn glass">
-            <a class="nav__btn-link" href="./index.html#contact">Skontaktuj się</a>
+            <a id="nav_btn" class="nav__btn-link" href="./index.html#contact"></a>
         </div>
     </div>
     <button class="hamburger hamburger--emphatic" type="button">
@@ -139,6 +145,7 @@
 
 </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./dist/js/translation.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
 </body>
 
